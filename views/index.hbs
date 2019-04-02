@@ -1,0 +1,28 @@
+<div class=" p-2 m-2">
+    <form class="container d-flex w-50 fixed-top " action="/movieData" method="POST">
+
+        {{!-- <h1 class="text-light">Search For Movie or Series</h1> --}}
+        <input class="form-control form-control-sm mt-1" type="text" name="moviename">
+        <button type="submit" class="ml-2 btn btn-primary">search</button>
+    </form>
+    {{#if data}}
+    {{#each data}}
+
+    <div class=" m-3 mt-5 float-left text-light" style="width: 18rem; background-color:rgba(106, 110, 110, 0.90);
+    background-size:auto;
+    background-position: center;
+    background-repeat:no-repeat ;">
+        <img src="{{Poster}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title overflow-auto"><b>Movie title :</b> {{Title}}</h5>
+            <p class="card-text"><b>Year : </b>{{Year}}</p>
+            <p class="card-text"><b>Type : </b>{{Type}}</p>
+
+            <a href="https://www.imdb.com/title/{{imdbID}}" class="btn btn-primary">more info</a>
+        </div>
+    </div>
+
+
+    {{/each}}
+    {{/if}}
+</div>

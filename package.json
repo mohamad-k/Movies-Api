@@ -1,0 +1,19 @@
+{
+  "name": "aggregation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "*",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
